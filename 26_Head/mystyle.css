@@ -1,0 +1,26 @@
+body {
+    background-color: yellow;
+}
+
+body {
+    -webkit-user-modify: read-only;
+}
+
+user agent stylesheet 
+body {
+    display: block;
+    margin: 8px;
+}
+
+p {
+    color: blue;
+}
+
+user agent stylesheet 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
