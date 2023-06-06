@@ -99,4 +99,11 @@ SCSS Syntax:
   border: $width solid $color;
 }
 
+
+
+SCSS Syntax:
+
+.myTips {
+  @include bordered($color: orange);
+}
 */
