@@ -17,4 +17,12 @@ SCSS Syntax:
   font-weight: bold;
   border: 1px solid blue;
 }
+
+
+
+Sass @include mixin Syntax:
+
+selector {
+  @include mixin-name;
+}
 */
