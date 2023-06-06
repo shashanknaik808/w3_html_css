@@ -126,4 +126,16 @@ SCSS Syntax:
   @include transform(rotate(20deg));
 }
 
+
+
+
+After compilation, the CSS will look like this:
+
+CSS Output:
+
+.myBox {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
 */
