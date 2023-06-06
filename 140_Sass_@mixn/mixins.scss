@@ -34,4 +34,16 @@ SCSS Syntax:
   @include important-text;
   background-color: green;
 }
+
+
+
+CSS output:
+
+.danger {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: green;
+}
 */
