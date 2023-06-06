@@ -6,4 +6,15 @@ Sass @mixin Syntax:
   property: value;
   ...
 }
+
+
+
+SCSS Syntax:
+
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
 */
