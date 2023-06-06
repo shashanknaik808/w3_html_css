@@ -91,7 +91,12 @@ SCSS Syntax:
 /*
 
 
+Default Values for a Mixin
 
+SCSS Syntax:
 
+@mixin bordered($color: blue, $width: 1px) {
+  border: $width solid $color;
+}
 
 */
