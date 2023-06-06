@@ -25,4 +25,13 @@ Sass @include mixin Syntax:
 selector {
   @include mixin-name;
 }
+
+
+
+SCSS Syntax:
+
+.danger {
+  @include important-text;
+  background-color: green;
+}
 */
