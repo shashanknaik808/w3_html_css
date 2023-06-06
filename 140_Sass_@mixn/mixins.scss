@@ -107,3 +107,23 @@ SCSS Syntax:
   @include bordered($color: orange);
 }
 */
+
+
+/* 
+
+
+Using a Mixin For Vendor Prefixes
+
+SCSS Syntax:
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.myBox {
+  @include transform(rotate(20deg));
+}
+
+*/
