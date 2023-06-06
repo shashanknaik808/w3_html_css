@@ -75,6 +75,18 @@ SCSS Syntax:
   .myNotes {
     @include bordered(red, 2px); // Call mixin with two values
   }
+
+
+
+  CSS Output:
+
+.myArticle {
+  border: 1px solid blue;
+}
+
+.myNotes {
+  border: 2px solid red;
+}
   */
 /*
 
