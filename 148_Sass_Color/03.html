@@ -1,0 +1,32 @@
+Sass Manipulate Color Functions
+Function	Description & Example
+mix(color1, color2, weight)	Creates a color that is a mix of color1 and color2. The weight parameter must be between 0% and 100%. A larger weight means that more of color1 should be used. A smaller weight means that more of color2 should be used. Default is 50%.
+adjust-hue(color, degrees)	Adjusts the color's hue with a degree from -360deg to 360deg.
+
+Example:
+adjust-hue(#7fffd4, 80deg);
+Result: #8080ff
+adjust-color(color, red, green, blue, hue, saturation, lightness, alpha)	Adjusts one or more parameters by the specified amount. This function adds or subtracts the specified amount to/from the existing color value.
+
+Example:
+adjust-color(#7fffd4, blue: 25);
+Result:
+change-color(color, red, green, blue, hue, saturation, lightness, alpha)	Sets one or more parameters of a color to new values.
+
+Example:
+change-color(#7fffd4, red: 255);
+Result: #ffffd4
+scale-color(color, red, green, blue,  saturation, lightness, alpha)	Scales one or more parameters of color.
+rgba(color, alpha)	Creates a new color of color with the given alpha channel.
+
+Example:
+rgba(#7fffd4, 30%);
+Result: rgba(127, 255, 212, 0.3)
+lighten(color, amount)	Creates a lighter color of color with an amount between 0% and 100%. The amount parameter increases the HSL lightness by that percent.
+darken(color, amount)	Creates a darker color of color with an amount between 0% and 100%. The amount parameter decreases the HSL lightness by that percent.
+saturate(color, amount)	Creates a more saturated color of color with an amount between 0% and 100%. The amount parameter increases the HSL saturation by that percent.
+desaturate(color, amount)	Creates a less saturated color of color with an amount between 0% and 100%. The amount parameter decreases the HSL saturation by that percent.
+opacify(color, amount)	Creates a more opaque color of color with an amount between 0 and 1. The amount parameter increases the alpha channel by that amount.
+fade-in(color, amount)	Creates a more opaque color of color with an amount between 0 and 1. The amount parameter increases the alpha channel by that amount.
+transparentize(color, amount)	Creates a more transparent color of color with an amount between 0 and 1. The amount parameter decreases the alpha channel by that amount.
+fade-out(color, amount)	Creates a more transparent color of color with an amount between 0 and 1. The amount parameter decreases the alpha channel by that amount.
