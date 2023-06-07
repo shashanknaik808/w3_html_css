@@ -1,0 +1,40 @@
+Sass Color Functions
+We have divided the color functions in Sass into three parts: Set color functions, Get color functions, and Manipulate color functions:
+
+Sass Set Color Functions
+Function	Description & Example
+rgb(red, green, blue)	Sets a color using the Red-Green-Blue (RGB) model. An RGB color value is specified with: rgb(red, green, blue). Each parameter defines the intensity of that color and can be an integer between 0 and 255, or a percentage value (from 0% to 100%).
+
+Example:
+rgb(0, 0, 255); // rendered as blue because the blue parameter is set to its highest value (255) and the others are set to 0
+rgba(red, green, blue, alpha)	Sets a color using the Red-Green-Blue-Alpha (RGBA) model. RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the color. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+Example:
+rgba(0, 0, 255, 0.3); // rendered as blue with opacity
+hsl(hue, saturation, lightness)	Sets a color using the Hue-Saturation-Lightness (HSL) model - and represents a cylindrical-coordinate representation of colors. Hue is a degree on the color wheel (from 0 to 360) - 0 or 360 is red, 120 is green, 240 is blue. Saturation is a percentage value; 0% means a shade of gray and 100% is the full color. Lightness is also a percentage; 0% is black, 100% is white.
+
+Example:
+hsl(120, 100%, 50%); // green
+hsl(120, 100%, 75%); // light green
+hsl(120, 100%, 25%); // dark green
+hsl(120, 60%, 70%); // pastel green
+hsla(hue, saturation, lightness, alpha)	Sets a color using the Hue-Saturation-Lightness-Alpha (HSLA) model. HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity of the color. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+
+Example:
+hsl(120, 100%, 50%, 0.3); // green with opacity
+hsl(120, 100%, 75%, 0.3); // light green with opacity
+grayscale(color)	Sets a gray color with the same lightness as color.
+
+Example:
+grayscale(#7fffd4);
+Result: #c6c6c6
+complement(color)	Sets a color that is the complementary color of color.
+
+Example:
+complement(#7fffd4);
+Result: #ff7faa
+invert(color, weight)	Sets a color that is the inverse or negative color of color. The weight parameter is optional and must be a number between 0% and 100%. Default is 100%.
+
+Example:
+invert(white);
+Result: black
